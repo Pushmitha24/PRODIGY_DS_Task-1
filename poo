@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Sample data
+data = {'Category': ['A', 'B', 'C', 'D'],
+        'Count': [10, 20, 15, 25]}
+
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+# Plot bar chart
+plt.bar(df['Category'], df['Count'])
+plt.xlabel('Category')
+plt.ylabel('Count')
+plt.title('Distribution of Categories')
+plt.show()
